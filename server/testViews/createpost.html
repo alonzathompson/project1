@@ -1,0 +1,21 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>Testing</title>
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1>Create Post</h1>
+      <!--set action route to resource -->
+      <form action="/api/post" method="post" class="form">
+        <!--when sending post request name fields in input must match model properties-->
+        <input type='text' placeholder='title' name='title' />
+        <br>
+        <input type='textarea' placeholder='body' name='body' />
+        <br>
+        <input type="submit" value="Create Post" />
+      </form>
+    </div>
+  </body>
+</html>

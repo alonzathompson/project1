@@ -1,0 +1,21 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>Testing</title>
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1>Create Zone</h1>
+      <!--set action route to resource -->
+      <form action="/api/zone" method="post" class="form">
+        <!--when sending post request name fields in input must match model properties-->
+        <input type='text' placeholder='name' name='name' />
+        <br>
+        <input type='text' placeholder='zipcode' name='zipcode' />
+        <br>
+        <input type="submit" value="Create Zone" />
+      </form>
+    </div>
+  </body>
+</html>
